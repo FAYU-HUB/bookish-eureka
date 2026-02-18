@@ -6,11 +6,14 @@ body {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    align-items: top;
+    align-items: center; 
     justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px;
     margin: 0;
 }
 
 h3, h4, h2 {
     font-weight: 700;
+    margin-bottom: 10px;
 }
