@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <h1 value="Team 9x7x9x4x6🙏" id="label1"></h1>
+    The Most Good IP Logger Script By 9x7x9x4x6
+    Our Discord👇
+    <input type="text" value="https://discord.gg/F3nnGpbYeC" id="myInput">
+    <button id="copyBtn" onclick="copyToClipboard()">Copy Text</button>
+  </body>
+  <script>
+      const copyText = document.getElementById("myInput").value;
+  const btn = document.getElementById("copyBtn");
+
+  navigator.clipboard.writeText(copyText).then(() => {
+    const originalText = btn.innerText;
+    btn.innerText = "Copyed! ";
+    btn.style.backgroundColor = "#4CAF50";
+    btn.style.color = "white";
+
+    setTimeout(() => {
+      btn.innerText = originalText;
+      btn.style.backgroundColor = "";
+      btn.style.color = "";
+    }, 2000);
+  });
+               }
+  </script>
+</html>
